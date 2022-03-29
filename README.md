@@ -1,1 +1,1 @@
-# my-mpv-config
+# my_mpv_config
