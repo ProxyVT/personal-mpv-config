@@ -58,13 +58,6 @@ function openURL()
       mp.osd_message("clipboard empty")
       return
    end
-   
-   --immediately resume playback after loading URL
-   if mp.get_property_bool("core-idle") then
-      if not mp.get_property_bool("idle-active") then
-         mp.command("keypress space")
-      end
-   end
 
    --try opening url
    --will fail if url is not valid
@@ -72,4 +65,5 @@ function openURL()
    mp.commandv("loadfile", url, "replace")
 end
 
+mp.add_key_binding("MBTN_MID", openURL)
 mp.add_key_binding("ctrl+v", openURL)
