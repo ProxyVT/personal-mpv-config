@@ -25,9 +25,9 @@ local user_opts = {
                                 -- user, but internally negative is "always-on".
     fadeduration = 60,         -- duration of fade out in ms, 0 = no fade
     deadzonesize = 1,         -- size of deadzone
-    minmousemove = 0,           -- minimum amount of pixels the mouse has to
+    minmousemove = 1,           -- minimum amount of pixels the mouse has to
                                 -- move between ticks to make the OSC show up
-    iamaprogrammer = false,     -- use native mpv values and disable OSC
+    iamaprogrammer = true,     -- use native mpv values and disable OSC
                                 -- internal track list management (and some
                                 -- functions that depend on it)
     layout = "bottombar",
@@ -43,7 +43,7 @@ local user_opts = {
     volhandlesize = 14,
     handlesize = 1,             -- size ratio of the diamond and knob handle
     seekrangestyle = "inverted",-- bar, line, slider, inverted or none
-    seekrangeseparate = true,   -- wether the seekranges overlay on the bar-style seekbar
+    seekrangeseparate = false,   -- wether the seekranges overlay on the bar-style seekbar
     seekrangealpha = 210,       -- transparency of seekranges
     seekbarkeyframes = true,    -- use keyframes when dragging the seekbar
     title = "${media-title}",   -- string compatible with property-expansion
@@ -52,7 +52,7 @@ local user_opts = {
     tooltipfontsize = 17.5,
     tooltipseekbar = false,     -- following cursor bar over the playback seekbar
     tooltipseekbaralpha = 230,
-    timetotal = true,           -- display total time instead of remaining time?
+    timetotal = false,           -- display total time instead of remaining time?
     timems = false,             -- display timecodes with milliseconds?
     visibility = "auto",        -- only used at init to set visibility_mode(...)
     greenandgrumpy = false,     -- disable santa hat
