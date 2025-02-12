@@ -67,4 +67,4 @@ end
 
 mp.add_key_binding("MBTN_MID", openURL)
 mp.add_key_binding("Shift+Ins", openURL)
-mp.add_key_binding("Ctrl+V", openURL)
+mp.add_key_binding("Ctrl+Shift+V", openURL)
